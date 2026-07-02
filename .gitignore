@@ -1,0 +1,7 @@
+research-platform/
+crm_leads.json
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.env

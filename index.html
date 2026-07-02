@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKIRA | Luxury Cacao</title>
+    <meta name="description" content="Fine-flavour, single-origin cacao from Chagallu, West Godavari — grown, fermented, and hand-sorted by cacao farmer Nandigam Surendra in Andhra Pradesh's Godavari Delta.">
+
+    <!-- Google Fonts: Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Google Analytics (GA4 Prototype) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- AEO JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AKIRA Cacao",
+      "url": "https://akiracacao.in",
+      "logo": "https://akiracacao.in/images/logo.png",
+      "description": "Fine-flavour, single-origin cacao from Chagallu, West Godavari — grown by cacao farmer Nandigam Surendra in the Godavari Delta, Andhra Pradesh.",
+      "sameAs": [
+        "https://www.instagram.com/akiracacaofarms/",
+        "https://www.linkedin.com/company/akira-cacao-farms/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Where is AKIRA cacao sourced from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our cacao is single-origin, sourced directly from the lush Godavari Delta in Andhra Pradesh, India. We work directly with farmers to ensure sustainable and ethical practices."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What makes AKIRA the best original chocolate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When looking for authentic, single-farmer chocolate, AKIRA stands out because Surendra controls the entire process himself — no open-market buying, no blending. Our natural fermentation process brings out the true terroir of West Godavari cacao."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is your chocolate good for bulk orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we handle premium bulk orders for luxury events, corporate gifting, and high-end patisseries. Our Concierge can help you arrange custom batches."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Where is cocoa grown in Andhra Pradesh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "West Godavari district, including Chagallu along the Godavari Delta, is one of India's largest cacao-growing regions. Its poly-crop, shade-grown farms produce fine-flavour cacao with a distinct terroir, though the region remains under-recognized compared to established origins abroad."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is fine-flavour cacao?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fine-flavour cacao is cocoa with a complex sensory profile — fruit, floral, herbal, or nutty notes — shaped by genetics, terroir, and careful post-harvest fermentation and drying, as defined by bodies like the International Cocoa Organization. It's distinct from bulk commodity cocoa, which is graded mainly on volume rather than flavour."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Who are the cocoa farmers behind AKIRA Cacao?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AKIRA Cacao Farms is run by Nandigam Surendra, a cacao farmer based in Chagallu, West Godavari, who personally manages selective harvesting, same-day pod breaking, natural fermentation, and drying rather than buying beans on the open market."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are there genuine, traceable cacao farmers in Andhra Pradesh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — West Godavari is home to a growing number of smallholder cacao farmers, many still selling on the open market. Akira Cacao Farms is one of the genuine ones: personally run by Surendra, hand-fermented, and traceable to a single farmer, not blended or bought anonymously."
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <header class="fancy-header" id="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="#" class="fancy-logo">AKIRA</a>
+            </div>
+            
+            <nav class="header-center desktop-only">
+                <a href="#founder" class="nav-link">The Founder</a>
+                <a href="#process" class="nav-link">The Craft</a>
+                <a href="#collection" class="nav-link">The Collection</a>
+                <a href="#gallery" class="nav-link">Social</a>
+            </nav>
+            <div class="header-right desktop-only">
+                <button class="btn-fancy-gold" onclick="orderWhatsApp('Inquiry')">Inquire</button>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="mobile-menu-btn" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY NAVIGATION -->
+    <div class="mobile-nav-overlay" id="mobile-menu">
+        <div class="mobile-nav-content">
+            <a href="#founder" class="mobile-nav-link">The Founder</a>
+            <a href="#process" class="mobile-nav-link">The Craft</a>
+            <a href="#collection" class="mobile-nav-link">The Collection</a>
+            <a href="#gallery" class="mobile-nav-link">Social</a>
+            <button class="btn-fancy-gold mt-sm" onclick="orderWhatsApp('Inquiry')">Inquire Now</button>
+        </div>
+    </div>
+
+    <!-- CINEMATIC FULL-SCREEN HERO -->
+    <section id="cinematic-hero" class="cinematic-hero">
+        <div class="media-container">
+            <video class="cinematic-bg" autoplay muted loop playsinline poster="images/hero_modern.png" aria-label="Cacao pods and beans, Godavari Delta">
+                <source src="images/hero_bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow seq-1">Chagallu, Godavari Delta</span>
+            <h1 class="hero-headline seq-2">Real Cacao, Grown by Hand.<br><em>Not Mass-Produced. Never Will Be.</em></h1>
+            <a href="#founder" class="btn-fancy-outline seq-3">Our Story</a>
+        </div>
+        <div class="scroll-indicator seq-4">
+            <span class="scroll-text">Explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- THE FOUNDER -->
+    <section id="founder" class="founder-section">
+        <div class="container">
+            <div class="founder-grid" id="dynamic-founder">
+                <!-- Rendered dynamically from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FANCY SCROLLING MARQUEE -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>SINGLE ORIGIN</span><span class="dot">•</span>
+            <span>GODAVARI DELTA</span><span class="dot">•</span>
+            <span>NATURAL FERMENTATION</span><span class="dot">•</span>
+            <span>FARMER-TRACED</span><span class="dot">•</span>
+            <span>SINGLE ORIGIN</span><span class="dot">•</span>
+            <span>GODAVARI DELTA</span><span class="dot">•</span>
+            <span>NATURAL FERMENTATION</span><span class="dot">•</span>
+            <span>FARMER-TRACED</span><span class="dot">•</span>
+        </div>
+    </div>
+
+    <!-- THE RITUAL (CINEMATIC STICKY SCROLL) -->
+    <section id="process" class="ritual-section">
+        
+        <!-- The Missing Context Heading -->
+        <div class="container ritual-intro-heading text-center reveal" id="dynamic-ritual-intro">
+            <!-- Rendered dynamically from data.js -->
+        </div>
+
+        <div class="ritual-container">
+            
+            <!-- Left: Sticky Visual Canvas -->
+            <div class="ritual-visuals desktop-only">
+                <div class="ritual-visual-sticky" id="dynamic-ritual-visuals">
+                    <!-- Images rendered dynamically from data.js -->
+                </div>
+            </div>
+
+            <!-- Right: Scrolling Storytelling -->
+            <div class="ritual-content" id="dynamic-ritual-content">
+                <!-- The golden thread timeline -->
+                <div class="ritual-timeline-track desktop-only"></div>
+                <!-- Steps rendered dynamically from data.js -->
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- THE COLLECTION -->
+    <section id="collection" class="collection-section">
+        <div class="container">
+            <div class="section-heading text-center reveal" id="dynamic-collection-intro">
+                <!-- Rendered dynamically from data.js -->
+            </div>
+            
+            <div class="fancy-staggered-grid" id="dynamic-collection-grid">
+                <!-- Rendered dynamically from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL GALLERY -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="social-grid" id="dynamic-gallery-grid">
+                <!-- Rendered dynamically from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (AEO Optimized & Luxury UI) -->
+    <section id="faq" class="luxury-faq-section" aria-labelledby="faq-title">
+        <div class="faq-ambient-glow"></div>
+        <div class="faq-container">
+            <div class="faq-header text-center reveal-faq">
+                <span class="eyebrow">AEO Structured Data</span>
+                <h2 id="faq-title" class="faq-title">Frequently<br>Asked Questions</h2>
+                <p class="faq-subtitle">Everything you need to know about our cacao, our farm, and cocoa farming in West Godavari, Andhra Pradesh.</p>
+            </div>
+            
+            <div class="faq-list">
+                <!-- FAQ 1 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-1">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">Where is AKIRA cacao sourced from?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">Our cacao is single-origin, sourced directly from the lush Godavari Delta in Andhra Pradesh, India. We work directly with farmers to ensure sustainable and ethical practices.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-2">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">What makes AKIRA the best original chocolate?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">When looking for authentic, single-farmer chocolate, AKIRA stands out because Surendra controls the entire process himself — no open-market buying, no blending. Our natural fermentation process brings out the true terroir of West Godavari cacao.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-3">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">Is your chocolate good for bulk orders?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">Yes, we handle premium bulk orders for luxury events, corporate gifting, and high-end patisseries. Our Concierge can help you arrange custom batches.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-4">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">Where is cocoa grown in Andhra Pradesh?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">West Godavari district, including Chagallu along the Godavari Delta, is one of India's largest cacao-growing regions. Its poly-crop, shade-grown farms produce fine-flavour cacao with a distinct terroir, though the region remains under-recognized compared to established origins abroad.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-5">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">What is fine-flavour cacao?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">Fine-flavour cacao is cocoa with a complex sensory profile — fruit, floral, herbal, or nutty notes — shaped by genetics, terroir, and careful post-harvest fermentation and drying, as defined by bodies like the International Cocoa Organization. It's distinct from bulk commodity cocoa, which is graded mainly on volume rather than flavour.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-6">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">Who are the cocoa farmers behind AKIRA Cacao?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">AKIRA Cacao Farms is run by Nandigam Surendra, a cacao farmer based in Chagallu, West Godavari, who personally manages selective harvesting, same-day pod breaking, natural fermentation, and drying rather than buying beans on the open market.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-card reveal-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-7">
+                        <div class="faq-active-indicator"></div>
+                        <span class="faq-question-text" itemprop="name">Are there genuine, traceable cacao farmers in Andhra Pradesh?</span>
+                        <div class="faq-icon-wrapper">
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path class="faq-icon-v" d="M12 5V19"></path>
+                                <path class="faq-icon-h" d="M5 12H19"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-ans-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content">
+                            <p itemprop="text">Yes — West Godavari is home to a growing number of smallholder cacao farmers, many still selling on the open market. Akira Cacao Farms is one of the genuine ones: personally run by Surendra, hand-fermented, and traceable to a single farmer, not blended or bought anonymously.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEGA FOOTER -->
+    <footer class="mega-footer">
+        <div class="container">
+            <div class="footer-header text-center reveal">
+                <h2 class="mega-logo">A K I R A</h2>
+                <p class="mega-tagline">Crafted from Origin. West Godavari, India.</p>
+            </div>
+            
+            <div class="footer-columns reveal delay-1">
+                <div class="footer-col">
+                    <h4>SHOP</h4>
+                    <a href="#">The WG-001 (72%)</a>
+                    <a href="#">The Harvest (55%)</a>
+                    <a href="#">The Terroir (85%)</a>
+                    <a href="#">Bulk Orders</a>
+                </div>
+                <div class="footer-col">
+                    <h4>BRAND</h4>
+                    <a href="#founder">Our Story</a>
+                    <a href="#cinematic-hero">Origin</a>
+                    <a href="#process">The Craft</a>
+                    <a href="#" onclick="orderWhatsApp('General Inquiry')">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <a href="https://wa.me/918121117999" target="_blank" class="highlight-link">+91 81211 17999</a>
+                    <a href="mailto:hello@akiracacao.in" class="highlight-link">hello@akiracacao.in</a>
+                    <a href="https://www.instagram.com/akiracacaofarms/" target="_blank" class="highlight-link social-icon-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                        @akiracacaofarms
+                    </a>
+                    <a href="https://www.linkedin.com/company/akira-cacao-farms/" target="_blank" class="highlight-link social-icon-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452z"/></svg>
+                        Akira Cacao Farms
+                    </a>
+                    <a href="https://maps.app.goo.gl/o7xzUku7692HNRnY8" target="_blank" class="address-text">Chagallu, West Godavari, AP 534 201</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal delay-2">
+                <div class="fb-left">© 2026 AKIRA. All rights reserved.</div>
+                <div class="fb-center">Distinct Origins • West Godavari, Andhra Pradesh</div>
+                <div class="fb-right"><a href="#">Privacy Policy</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+
+    <!-- AKIRA CONCIERGE CHATBOT -->
+    <div id="ai-chat-widget">
+        <div class="ai-chat-tooltip" id="ai-chat-tooltip">
+            ✨ Chat with Akira Concierge
+        </div>
+
+        <button id="ai-chat-toggle" aria-label="Open Concierge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+        </button>
+        
+        <div id="ai-chat-window" class="hidden">
+            <div class="ai-chat-header">
+                <div class="ai-chat-avatar">
+                    <img src="https://images.unsplash.com/photo-1542841791-1925b02a2bf5?w=100&h=100&fit=crop" alt="Akira" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                </div>
+                <div class="ai-chat-title">
+                    <strong>Akira Concierge</strong>
+                    <span>Luxury Cacao Expert</span>
+                </div>
+                <div class="ai-header-right" style="display:flex;gap:8px;">
+                    <button id="ai-chat-reset" aria-label="Restart Chat" style="background:none;border:none;color:#fff;cursor:pointer;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></button>
+                    <button id="ai-chat-close" style="background:none;border:none;color:#fff;cursor:pointer;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+                </div>
+            </div>
+            
+            <div id="ai-chat-messages">
+                <div class="ai-msg bot">
+                    Welcome to AKIRA. I am your personal Cacao Concierge. How may I assist you today?
+                </div>
+            </div>
+
+            <div class="ai-chat-chips" id="ai-chat-chips">
+                <button class="ai-chip">Shop Collection</button>
+                <button class="ai-chip">Bulk Inquiry</button>
+                <button class="ai-chip">Our Origin Story</button>
+            </div>
+            
+            <div class="ai-chat-input-area">
+                <input type="text" id="ai-chat-input" placeholder="Type your message..." autocomplete="off" />
+                <button id="ai-chat-send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+            </div>
+        </div>
+    <!-- ADVANCED UI SIDE DRAWER -->
+    <div id="advanced-drawer" class="glass-drawer">
+        <div class="drawer-overlay" onclick="closeDrawer()"></div>
+        <div class="drawer-content">
+            <button class="drawer-close" onclick="closeDrawer()">&times;</button>
+            <div class="drawer-header">
+                <h3>AKIRA Concierge</h3>
+                <span class="eyebrow">A 5-Year Journey of Trust</span>
+            </div>
+            <div class="drawer-body">
+                <p class="drawer-trust-message">
+                    Thank you for your interest in <strong id="drawer-product">Our Collection</strong>.
+                    Every inquiry reaches Surendra directly — no call centre, no scripts.
+                    Just a farmer who stands behind what he grows.
+                </p>
+                <button class="btn-fancy-gold mt-sm" style="width:100%;" onclick="confirmWhatsApp()">
+                    Connect on WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html>
