@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 stepsHtml += `
                 <div class="cinematic-step" id="step-${step.id}" data-step="${step.id}" data-ambient="${step.ambientClass}">
-                    <div class="mobile-ritual-img mobile-only">
+                    <div class="mobile-only">
                         <img src="${step.imagePath}" alt="${step.imageAlt}">
                     </div>
                     <div class="cinematic-step-content">
